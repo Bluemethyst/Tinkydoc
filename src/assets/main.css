@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+
+:root {
+    --background: #11111b;
+    --tile: #1e1e2e;
+    --tag: #33363d;
+    --tag-text: #787d90;
+    --text: #cdd6f4;
+    --accent: #cba6f7;
+    --url: #74c7ec;
+}
+
+body {
+    font-family: "Questrial", sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+a:visited {
+    color: var(--url);
+}
+a:link {
+    color: var(--url);
+}
+
+nav {
+    display: flex;
+    background-color: var(--tile);
+    border-radius: 20px;
+    flex-direction: row;
+    width: 100%;
+}
+
+#nav-title {
+    margin: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.router-links {
+    padding: 20px;
+}
+
+.router-link {
+    margin: 20px;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: var(--tile);
+    border-radius: 20px;
+    width: 80%;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.paragraph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.searchbox {
+    margin-top: 200px;
+    background-color: var(--tag);
+    color: var(--tag-text);
+    font-family: "Questrial", sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    border-radius: 20px;
+    border: none;
+}
+.searchbox:focus {
+    outline: none;
+}
