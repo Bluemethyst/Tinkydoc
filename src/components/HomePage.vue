@@ -1,5 +1,5 @@
 <script lang="ts">
-import { defineComponent, watchEffect, ref, watch } from "vue";
+import { defineComponent, watchEffect, ref, watch, reactive } from "vue";
 import LangSelect from "./LangSelect.vue";
 import NavBar from "./NavBar.vue";
 import { useRouter } from "vue-router";
@@ -115,6 +115,7 @@ export default defineComponent({
             <li v-for="file in filteredFiles" :key="file">
                 <!-- <a :href="`page${file}`">{{ file }}</a>-->
                 <RouterLink :to="`/page${file}`">{{ file }}</RouterLink>
+                <p>{{ file }}</p>
             </li>
         </ul>
     </div>
